@@ -124,10 +124,10 @@ else:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'flatJungle',
-        'USER': 'flatJungleAdmin',
-        'PASSWORD': 'flatJungleAdmin',
-        'HOST': '1293ucnzxn0==',
+        'NAME': 'rengorum',
+        'USER': 'admin',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
