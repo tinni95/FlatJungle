@@ -114,10 +114,22 @@ WSGI_APPLICATION = 'rengorum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+if DEBUG: 
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=config('DATABASE_URL')
+        )
+    }
+else:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'flatJungle',
+        'USER': 'flatJungle',
+        'PASSWORD': 'flatJungleAdmin',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
 }
 
 # Password validation
