@@ -125,9 +125,9 @@ else:
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'flatJungle',
-        'USER': 'flatJungle',
+        'USER': 'flatJungleAdmin',
         'PASSWORD': 'flatJungleAdmin',
-        'HOST': 'localhost',
+        'HOST': '1293ucnzxn0==',
         'PORT': '',
     }
 }
