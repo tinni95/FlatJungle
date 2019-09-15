@@ -174,7 +174,9 @@ RENGORUM_DIR = os.path.dirname(BASE_DIR)
 BACKEND_DIR = os.path.join(RENGORUM_DIR, 'backend')
 STATIC_ROOT = os.path.join(BACKEND_DIR, 'static')
 STATIC_URL = '/static/'
-
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, 'build/static'),
+    ]
 # MEDIA
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Ref: https://stackoverflow.com/questions/34563454/django-imagefield-upload-to-path
